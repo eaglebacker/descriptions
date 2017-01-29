@@ -1,41 +1,99 @@
-li {
-  display:inline;
-  justify-content:space-between;
-  margin:25px;
-  font-family:Times;
-  padding:10px;
- 
+#mbwnavbar {
+    background:rgba(66, 197, 190, 1);
+    color: #000000;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    top:-7px;
+   left:-8px;
+   right:-8px;
+    border-top:0px solid #transparent;
+    height:50px;
 }
-li a {
-  text-decoration:none;
-  color:#000;
+#mbwnav {
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    display: table;
 }
-.navbar{
-  border:2px solid white;
-  width:100%;
-  text-align:center;
-  position:fixed;
-  top:-3px;
-  left:-3px;
-  right:-3px;
-  background: rgba(66, 197, 190, 1)
+#mbwnav ul {
+    float: none;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+#mbwnav li {
+    list-style: none;
+    margin-left:50px;
+    padding: 0;
+    display:inline-block;
+    border-left:0px solid #333;
+    border-right:0px solid #333;
+    height: 35px;
+}
+#mbwnav li a, #mbwnav li a:link, #mbwnav li a:visited {
+    color: #fff;
+    display: inline-block;
+    font:normal 18px Times, sans-serif;
+    margin: 0;
+    margin-top:5px;
+    text-align: left;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+}
+#mbwnav li a:hover, #mbwnav li a:active {
+    border-bottom:2px solid black;
+    color: #fdeae9;
+    display: block;
+    text-decoration: none;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
 }
 
-li {
-  display:inline;
-  justify-content:space-between;
-  color:white;
-  margin:25px;
-  font-family:Times;
-  padding:10px;
- 
+#mbwnav li ul {
+    z-index: 9999;
+    position: absolute;
+    left: -999em;
+    height: auto;
+    width: 100px;
+    margin: 0 auto;
+    padding: 0;
 }
-li a {
-  text-decoration:none;
-  color:white;
+#mbwnav li ul a {
+    width: 100px;
 }
-li a:hover {
-  border-bottom:2px solid black;
+#mbwnav li ul ul {
+    margin: -25px 0 0 10px;
+}
+#mbwnav li:hover ul ul, #mbwnav li:hover ul ul ul, #mbwnav li.sfhover ul ul, #mbwnav li.sfhover ul ul ul {
+    left: -999em;
+}
+#mbwnav li:hover ul, #mbwnav li li:hover ul, #mbwnav li li li:hover ul, #mbwnav li.sfhover ul, #mbwnav li li.sfhover ul, #mbwnav li li li.sfhover ul {
+    left: auto;
+    right:auto;
+}
+#mbwnav li:hover, #mbwnav li.sfhover {
+    position: static;
+}
+#mbwnav li li a, #mbwnav li li a:link, #mbwnav li li a:visited {
+    background: #ffffff;
+    width: 120px;
+    color: #000000;
+    display: inline-block;
+    font:normal 20px Times, sans-serif;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
+    z-index:9999;
+    border-bottom:0px dotted #333;
+}
+#mbwnav li li a:hover, #mbwnavli li a:active {
+    background: #444;
+    color: #fdeae9;
+    display: block;
+    margin: 0 auto;
+    padding: 9px 12px 10px 12px;
+    text-decoration: none;
 }
 #insta {
   border-radius:5%;
